@@ -8,6 +8,7 @@ body {
     font-family: "Poppins", Helvetica, Arial, sans-serif;
 }
 
+/* ------------ Inicio sección encabezado ------------ */
 #encabezado {}
 
 nav {
@@ -71,7 +72,9 @@ nav {
     text-align: center;
     color: #160E0D;
 }
+/* ------------ Fin sección encabezado ------------ */
 
+/* ------------ Inicio sección sobre nosotros ------------ */
 
 #sobreNosotros {
     width: 100%;
@@ -103,12 +106,16 @@ nav {
 .contenido p {
     text-align: center;
 }
+/* ------------ Fin sección sobre nosotros ------------ */
 
+/* ------------ Inicio sección adopta un animal ------------ */
 #adoptaUnAnimal {
     width: 100%;
     height: 1080px;
 }
+/* ------------ Fin sección adopta un animal ------------ */
 
+/* ------------ Inicio sección contacto ------------ */
 #contacto {
     width: 100%;
     height: 1080px;
@@ -118,9 +125,12 @@ nav {
     padding-top: 60px;
     margin-top:0;
 }
+/* ------------ Fin sección contacto ------------ */
 
+/* ------------ Inicio sección Footer ------------ */
 footer {
     width: 100%;
     height: 682px;
     background-color: #1D242B;
 }
+/* ------------ Fin sección Footer ------------ */
