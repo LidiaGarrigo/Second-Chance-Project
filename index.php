@@ -1,3 +1,10 @@
+<?php 
+
+$json = file_get_contents('datos.json');
+$datos = json_decode($json, true);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,22 +38,16 @@
         </nav>
         <img src="assets/dogs.png" alt="Imagen no disponible" id="dogsImage">
         <div class="slogan">
-            <h1>Adoptar un animal no cambiará el mundo, pero <br> cambiará el mundo de ese animal</h1>
+            <h1><?php echo $datos['inicio']['eslogan']; ?></h1>
         </div>
     </header>
 
     <section id="sobreNosotros">
         <h1 class="titulo">Sobre nosotros</h1>
         <div class="contenido">
-            <p>Somos dos estudiantes de Desarrollo de Aplicaciones Web, que decidieron unir sus conocimientos adquiridos
-                en tecnología para lograr el importante objetivo de colaborar en la tarea de conseguir un nuevo hogar a
-                las mascotas desfavorecidas, víctimas del abandono animal.</p>
-            <p>Creemos que “<em><b>Adoptar un animal no cambiará el mundo, pero cambiará el mundo de ese
-                        animal</b></em>”, por esa razón, Lidia Garrigó desde Barcelona y Lenon Acacio desde Madrid,
-                hemos unido esfuerzos para crear <b>Second Chance</b>, una aplicación que no solo cambiará tu vida, sino
-                también la de un amoroso animal.</p>
-            <p>En las fotos de a continuación, podrás observar a Lidia a punto de alimentar a Gris, su pequeño conejo
-                saltarín y a Lenon posando en una selfie por la tarde junto a su adorada perrita Fiona.</p>
+            <p><?php echo $datos['sobreNosotros']['parrafo1']; ?></p>
+            <p><?php echo $datos['sobreNosotros']['parrafo2']['seccion1']; ?><em><b><?php echo $datos['sobreNosotros']['parrafo2']['seccion2']; ?></b></em><?php echo $datos['sobreNosotros']['parrafo2']['seccion3']; ?><b><?php echo $datos['sobreNosotros']['parrafo2']['seccion4']; ?></b><?php echo $datos['sobreNosotros']['parrafo2']['seccion5']; ?></p>
+            <p><?php echo $datos['sobreNosotros']['parrafo3']; ?></p>
         </div>
         <img src="assets/compis.png" alt="Imagen no disponible">
     </section>
