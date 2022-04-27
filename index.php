@@ -137,6 +137,20 @@ $datos = json_decode($json, true);
 
     <section id="contacto">
         <h1 class="titulo">Contacto</h1>
+        <div id="contenedorContacto">
+            <h2>¿En qué podemos ayudarte?</h2>
+            <form id="formu" action="">
+                <label class="etiquetaFormu" for="">Nombre</label>
+                <input class="inputFormu" type="text" placeholder="Escribe tu nombre">
+                <label class="etiquetaFormu" for="">Teléfono</label>
+                <input class="inputFormu" type="tel" placeholder="Escribe tu teléfono">
+                <label class="etiquetaFormu" for="">Correo electrónico</label>
+                <input class="inputFormu" type="email" placeholder="Escribe tu correo electrónico">
+                <label class="etiquetaFormu" for="">Mensaje</label>
+                <textarea placeholder="Escribe lo que quieras comentarnos" name="" id="" cols="30" rows="10"></textarea>
+                <button id="btn-contacto">Enviar</button>
+            </form>
+        </div>
     </section>
 
     <footer>
