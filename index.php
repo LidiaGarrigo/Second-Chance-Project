@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 $json = file_get_contents('datos.json');
 $datos = json_decode($json, true);
@@ -14,34 +14,19 @@ $datos = json_decode($json, true);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Second chance</title>
     <link rel="stylesheet" href="Css/style.css">
-    <link
-        href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap" rel="stylesheet">
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 
 </head>
 
 <body>
     <header id="encabezado">
-        <nav>
-            <a href="index.html">
-                <img src="assets/logos/second_chance.png" alt="logo" id="logo" width="66">
-            </a>
-            <div id="menu">
-                <ul id="listaMenu">
-                    <li class="elementoMenu"><a href="#encabezado">Inicio</a></li>
-                    <li class="elementoMenu"><a href="#sobreNosotros">Sobre nosotros</a></li>
-                    <li class="elementoMenu"><a href="#adoptaUnAnimal">Adopta un animal</a></li>
-                    <li class="elementoMenu"><a href="#contacto">Contacto</a></li>
-                </ul>
-            </div>
-        </nav>
+        <?php require "navbar.php" ?>
         <img src="assets/dogs.png" alt="Imagen no disponible" id="dogsImage">
         <div class="slogan">
             <h1><?php echo $datos['inicio']['eslogan']; ?></h1>
         </div>
     </header>
-
     <section id="sobreNosotros">
         <h1 class="titulo">Sobre nosotros</h1>
         <div class="contenido">
@@ -118,97 +103,35 @@ $datos = json_decode($json, true);
             </aside>
 
             <div class="containerCards">
-                <div class="card" id="perro1" onclick="window.location.href='Html/fichaAnimal.html'">
-                    <div class="infoCard">
-                        <div class="textCard">
-                            <span>Nombre</span>
-                            <span>Macho - 5 años</span>
+                <?php foreach ($datos['adoptaAnimal']['perros'] as $perro) {
+                ?>
+                    <div class="card" id="perro<?php echo $perro['id']; ?>" onclick="window.location.href='Html/fichaAnimal.html'">
+                        <div class="infoCard">
+                            <div class="textCard">
+                                <span><strong><? echo $perro['nombreAnimal'] ?></strong></span>
+                                <span><? echo $perro['sexo'] ?> - <? echo $perro['edad'] ?></span>
+                            </div>
+                            <button class="buttonCard" onclick="window.location.href='Html/fichaAnimal.html'">Adoptar
+                            </button>
                         </div>
-                        <button class="buttonCard" onclick="window.location.href='Html/fichaAnimal.html'">Adoptar
-                        </button>
                     </div>
-                </div>
-
-                <div class="card" id="perro2">
-                    <div class="infoCard">
-                        <div class="textCard">
-                            <span>Nombre</span>
-                            <span>Macho - 5 años</span>
+                <?php } ?>
+                <?php foreach ($datos['adoptaAnimal']['gatos'] as $gato) {
+                ?>
+                    <div class="card" id="gato<?php echo $gato['id']; ?>" onclick="window.location.href='Html/fichaAnimal.html'">
+                        <div class="infoCard">
+                            <div class="textCard">
+                                <span><strong><? echo $gato['nombreAnimal'] ?></strong></span>
+                                <span><? echo $gato['sexo'] ?> - <? echo $gato['edad'] ?></span>
+                            </div>
+                            <button class="buttonCard" onclick="window.location.href='Html/fichaAnimal.html'">Adoptar
+                            </button>
                         </div>
-                        <button class="buttonCard" onclick="window.location.href='Html/formAdopcion.html'">Adoptar
-                        </button>
                     </div>
-                </div>
-
-                <div class="card" id="perro3">
-                    <div class="infoCard">
-                        <div class="textCard">
-                            <span>Nombre</span>
-                            <span>Macho - 5 años</span>
-                        </div>
-                        <button class="buttonCard" onclick="window.location.href='Html/formAdopcion.html'">Adoptar
-                        </button>
-                    </div>
-                </div>
-
-                <div class="card" id="perro4">
-                    <div class="infoCard">
-                        <div class="textCard">
-                            <span>Nombre</span>
-                            <span>Macho - 5 años</span>
-                        </div>
-                        <button class="buttonCard" onclick="window.location.href='Html/formAdopcion.html'">Adoptar
-                        </button>
-                    </div>
-                </div>
-
-                <div class="card" id="perro5">
-                    <div class="infoCard">
-                        <div class="textCard">
-                            <span>Nombre</span>
-                            <span>Macho - 5 años</span>
-                        </div>
-                        <button class="buttonCard" onclick="window.location.href='Html/formAdopcion.html'">Adoptar
-                        </button>
-                    </div>
-                </div>
-
-                <div class="card" id="perro6">
-                    <div class="infoCard">
-                        <div class="textCard">
-                            <span>Nombre</span>
-                            <span>Macho - 5 años</span>
-                        </div>
-                        <button class="buttonCard" onclick="window.location.href='Html/formAdopcion.html'">Adoptar
-                        </button>
-                    </div>
-                </div>
-
-                <div class="card" id="perro7">
-                    <div class="infoCard">
-                        <div class="textCard">
-                            <span>Nombre</span>
-                            <span>Macho - 5 años</span>
-                        </div>
-                        <button class="buttonCard" onclick="window.location.href='Html/formAdopcion.html'">Adoptar
-                        </button>
-                    </div>
-                </div>
-
-                <div class="card" id="perro8">
-                    <div class="infoCard">
-                        <div class="textCard">
-                            <span>Nombre</span>
-                            <span>Macho - 5 años</span>
-                        </div>
-                        <button class="buttonCard" onclick="window.location.href='Html/formAdopcion.html'">Adoptar
-                        </button>
-                    </div>
-                </div>
-
+                <?php } ?>
             </div>
         </div>
-        <p class="mas">Mostrar más ...</p>
+        <!--    <p class="mas">Mostrar más ...</p> -->
 
     </section>
 

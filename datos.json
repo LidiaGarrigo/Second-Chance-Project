@@ -14,8 +14,9 @@
         "parrafo3": "En las fotos de a continuación, podrás observar a Lidia a punto de alimentar a Gris, su pequeño conejo saltarín y a Lenon posando en una selfie por la tarde junto a su adorada perrita Fiona."
     },
     "adoptaAnimal": {
-        "perros": {
-            "perro1": {
+        "perros": [
+            {
+                "id": 1,
                 "nombreAnimal": "Seitán",
                 "sexo": "Macho",
                 "edad": "5 años",
@@ -30,7 +31,8 @@
                     "item6": "Otra información: Los animales se entregan identificados, desparasitados, con las vacunas obligatorias y esterilizados o con el compromiso de esterilización. Todos los trámites y tratamientos son gratuitos. (La identificación con microchip es obligatoria en perros, gatos, conejos, hurones y équidos. La vacuna de la rabia es obligatoria en perros mayores de 3 meses)."
                 }
             },
-            "perro2": {
+            {   
+                "id":2,
                 "nombreAnimal": "Dante",
                 "sexo": "Macho",
                 "edad": "7 años",
@@ -45,7 +47,8 @@
                     "item6": "Otra información: Los animales se entregan identificados, desparasitados, con las vacunas obligatorias y esterilizados o con el compromiso de esterilización. Todos los trámites y tratamientos son gratuitos. (La identificación con microchip es obligatoria en perros, gatos, conejos, hurones y équidos. La vacuna de la rabia es obligatoria en perros mayores de 3 meses)."
                 }
             },
-            "perro3": {
+            {
+                "id":3,
                 "nombreAnimal": "Tofu",
                 "sexo": "Macho",
                 "edad": "9 años",
@@ -60,7 +63,8 @@
                     "item6": "Otra información: Los animales se entregan identificados, desparasitados, con las vacunas obligatorias y esterilizados o con el compromiso de esterilización. Todos los trámites y tratamientos son gratuitos. (La identificación con microchip es obligatoria en perros, gatos, conejos, hurones y équidos. La vacuna de la rabia es obligatoria en perros mayores de 3 meses)."
                 }
             },
-            "perro4": {
+            {
+                "id":4,
                 "nombreAnimal": "Dylan",
                 "sexo": "Macho",
                 "edad": "4 años",
@@ -75,7 +79,8 @@
                     "item6": "Otra información: Los animales se entregan identificados, desparasitados, con las vacunas obligatorias y esterilizados o con el compromiso de esterilización. Todos los trámites y tratamientos son gratuitos. (La identificación con microchip es obligatoria en perros, gatos, conejos, hurones y équidos. La vacuna de la rabia es obligatoria en perros mayores de 3 meses)."
                 }
             },
-            "perro5": {
+            {
+                "id":5,
                 "nombreAnimal": "Alfa",
                 "sexo": "Macho",
                 "edad": "5 años",
@@ -90,7 +95,8 @@
                     "item6": "Otra información: Los animales se entregan identificados, desparasitados, con las vacunas obligatorias y esterilizados o con el compromiso de esterilización. Todos los trámites y tratamientos son gratuitos. (La identificación con microchip es obligatoria en perros, gatos, conejos, hurones y équidos. La vacuna de la rabia es obligatoria en perros mayores de 3 meses)."
                 }
             },
-            "perro6": {
+            {
+                "id":6,
                 "nombreAnimal": "Dumbo",
                 "sexo": "Macho",
                 "edad": "4 años",
@@ -105,11 +111,12 @@
                     "item6": "Otra información: Los animales se entregan identificados, desparasitados, con las vacunas obligatorias y esterilizados o con el compromiso de esterilización. Todos los trámites y tratamientos son gratuitos. (La identificación con microchip es obligatoria en perros, gatos, conejos, hurones y équidos. La vacuna de la rabia es obligatoria en perros mayores de 3 meses)."
                 }
             },
-            "perro7": {
-                "nombreAnimal": "Olimpia",
+            {
+                "id":7,
+                "nombreAnimal": "Fiona",
                 "sexo": "Hembra",
                 "edad": "8 años",
-                "biografia": "Olimpia es una perra madura, simpática y sociable con personas, se lleva bien con otros perros aunque no con todos.",
+                "biografia": "Fiona es una perra madura, simpática y sociable con personas, se lleva bien con otros perros aunque no con todos.",
                 "descripcion": "Descripción",
                 "lista": {
                     "item1": "Sexo: Hembra",
@@ -120,7 +127,8 @@
                     "item6": "Otra información: Los animales se entregan identificados, desparasitados, con las vacunas obligatorias y esterilizados o con el compromiso de esterilización. Todos los trámites y tratamientos son gratuitos. (La identificación con microchip es obligatoria en perros, gatos, conejos, hurones y équidos. La vacuna de la rabia es obligatoria en perros mayores de 3 meses)."
                 }
             },
-            "perro8": {
+            {
+                "id":8,
                 "nombreAnimal": "Banana",
                 "sexo": "Hembra",
                 "edad": "3 años",
@@ -135,7 +143,8 @@
                     "item6": "Otra información: Los animales se entregan identificados, desparasitados, con las vacunas obligatorias y esterilizados o con el compromiso de esterilización. Todos los trámites y tratamientos son gratuitos. (La identificación con microchip es obligatoria en perros, gatos, conejos, hurones y équidos. La vacuna de la rabia es obligatoria en perros mayores de 3 meses)."
                 }
             },
-            "perro9": {
+            {
+                "id":9,
                 "nombreAnimal": "Yeni",
                 "sexo": "Hembra",
                 "edad": "6 años",
@@ -150,7 +159,8 @@
                     "item6": "Otra información: Los animales se entregan identificados, desparasitados, con las vacunas obligatorias y esterilizados o con el compromiso de esterilización. Todos los trámites y tratamientos son gratuitos. (La identificación con microchip es obligatoria en perros, gatos, conejos, hurones y équidos. La vacuna de la rabia es obligatoria en perros mayores de 3 meses)."
                 }
             },
-            "perro10": {
+            {
+                "id":10,
                 "nombreAnimal": "Sahira",
                 "sexo": "Hembra",
                 "edad": "5 años",
@@ -165,9 +175,10 @@
                     "item6": "Otra información: Los animales se entregan identificados, desparasitados, con las vacunas obligatorias y esterilizados o con el compromiso de esterilización. Todos los trámites y tratamientos son gratuitos. (La identificación con microchip es obligatoria en perros, gatos, conejos, hurones y équidos. La vacuna de la rabia es obligatoria en perros mayores de 3 meses)."
                 }
             }
-        },
-        "gatos": {
-            "gato1": {
+        ],
+        "gatos": [
+            {
+                "id":1,
                 "nombreAnimal": "Palmera",
                 "sexo": "Heambra",
                 "edad": "6 años",
@@ -182,7 +193,8 @@
                     "item6": "Otra información: Los animales se entregan identificados, desparasitados, con las vacunas obligatorias y esterilizados o con el compromiso de esterilización. Todos los trámites y tratamientos son gratuitos. (La identificación con microchip es obligatoria en perros, gatos, conejos, hurones y équidos. La vacuna de la rabia es obligatoria en perros mayores de 3 meses)."
                 }
             },
-            "gato2": {
+            {
+                "id":2,
                 "nombreAnimal": "Timoteo",
                 "sexo": "Macho",
                 "edad": "4 años",
@@ -197,7 +209,8 @@
                     "item6": "Otra información: Los animales se entregan identificados, desparasitados, con las vacunas obligatorias y esterilizados o con el compromiso de esterilización. Todos los trámites y tratamientos son gratuitos. (La identificación con microchip es obligatoria en perros, gatos, conejos, hurones y équidos. La vacuna de la rabia es obligatoria en perros mayores de 3 meses)."
                 }
             },
-            "gato3": {
+            {
+                "id":3,
                 "nombreAnimal": "Fígaro",
                 "sexo": "Macho",
                 "edad": "5 años",
@@ -212,7 +225,8 @@
                     "item6": "Otra información: Los animales se entregan identificados, desparasitados, con las vacunas obligatorias y esterilizados o con el compromiso de esterilización. Todos los trámites y tratamientos son gratuitos. (La identificación con microchip es obligatoria en perros, gatos, conejos, hurones y équidos. La vacuna de la rabia es obligatoria en perros mayores de 3 meses)."
                 }
             },
-            "gato4": {
+            {
+                "id":4,
                 "nombreAnimal": "Triana",
                 "sexo": "Hembra",
                 "edad": "4 años",
@@ -227,7 +241,8 @@
                     "item6": "Otra información: Los animales se entregan identificados, desparasitados, con las vacunas obligatorias y esterilizados o con el compromiso de esterilización. Todos los trámites y tratamientos son gratuitos. (La identificación con microchip es obligatoria en perros, gatos, conejos, hurones y équidos. La vacuna de la rabia es obligatoria en perros mayores de 3 meses)."
                 }
             },
-            "gato5": {
+            {
+                "id":5,
                 "nombreAnimal": "Minerva",
                 "sexo": "Hembra",
                 "edad": "5 años",
@@ -242,7 +257,8 @@
                     "item6": "Otra información: Los animales se entregan identificados, desparasitados, con las vacunas obligatorias y esterilizados o con el compromiso de esterilización. Todos los trámites y tratamientos son gratuitos. (La identificación con microchip es obligatoria en perros, gatos, conejos, hurones y équidos. La vacuna de la rabia es obligatoria en perros mayores de 3 meses)."
                 }
             }
-        }
+        ]
+
     },
     "formularioAdopcion": {
         "parrafo1": "La llegada al hogar de un animal de compañía supone la asunción de una importante responsabilidad. Antes de tomar la decisión definitiva, reflexiona sobre lo que ello implica. La adopción de animales en este sitio web es gratuita.",
