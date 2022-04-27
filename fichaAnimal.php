@@ -27,7 +27,7 @@ $datos = json_decode($json, true);
             <div class="row">
                 <div class="column">
                     <img src="assets/animales/perros/perro1/perro1.png" style="width:501px;cursor:pointer;" onclick="openModal();currentSlide(1)">
-                    <div style="display:flex; justify-content: center; gap: 7px; margin-top: 7px">
+                    <div style="display:flex; justify-content: center; gap: 7px;">
                         <img src="assets/animales/perros/perro1/perro1-1.png" style="width:120px;cursor:pointer;" onclick="openModal();currentSlide(1)">
                         <img src="assets/animales/perros/perro1/perro1-2.png" style="width:120px;cursor:pointer;" onclick="openModal();currentSlide(1)">
                         <img src="assets/animales/perros/perro1/perro1-3.png" style="width:120px;cursor:pointer;" onclick="openModal();currentSlide(1)">
@@ -89,7 +89,7 @@ $datos = json_decode($json, true);
             </ul>
             </div>
             <div class="containerButton">
-                <button>Adóptame</button>
+                <button onclick="window.location.href='formAdopcion.php'">Adóptame</button>
             </div>
         </div>
     </div>

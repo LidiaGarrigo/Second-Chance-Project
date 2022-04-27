@@ -57,8 +57,6 @@
     ;
 }
 
-
-
 .row:after {
     content: "";
     display: table;
@@ -66,7 +64,6 @@
 }
 
 .column {
-
     width: 501px;
 }
 
@@ -155,10 +152,6 @@
     padding: 8px 12px;
     position: absolute;
     top: 0;
-}
-
-img {
-    margin-bottom: -4px;
 }
 
 .demo {
