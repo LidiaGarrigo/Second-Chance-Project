@@ -105,26 +105,26 @@ $datos = json_decode($json, true);
             <div class="containerCards">
                 <?php foreach ($datos['adoptaAnimal']['perros'] as $perro) {
                 ?>
-                    <div class="card" id="perro<?php echo $perro['id']; ?>" onclick="window.location.href='Html/fichaAnimal.html'">
+                    <div class="card" id="perro<?php echo $perro['id']; ?>" onclick="window.location.href='fichaAnimal.php'">
                         <div class="infoCard">
                             <div class="textCard">
                                 <span><strong><? echo $perro['nombreAnimal'] ?></strong></span>
                                 <span><? echo $perro['sexo'] ?> - <? echo $perro['edad'] ?></span>
                             </div>
-                            <button class="buttonCard" onclick="window.location.href='Html/fichaAnimal.html'">Adoptar
+                            <button class="buttonCard" onclick="window.location.href='fichaAnimal.php'">Adoptar
                             </button>
                         </div>
                     </div>
                 <?php } ?>
                 <?php foreach ($datos['adoptaAnimal']['gatos'] as $gato) {
                 ?>
-                    <div class="card" id="gato<?php echo $gato['id']; ?>" onclick="window.location.href='Html/fichaAnimal.html'">
+                    <div class="card" id="gato<?php echo $gato['id']; ?>" onclick="window.location.href='fichaAnimal.php'">
                         <div class="infoCard">
                             <div class="textCard">
                                 <span><strong><? echo $gato['nombreAnimal'] ?></strong></span>
                                 <span><? echo $gato['sexo'] ?> - <? echo $gato['edad'] ?></span>
                             </div>
-                            <button class="buttonCard" onclick="window.location.href='Html/fichaAnimal.html'">Adoptar
+                            <button class="buttonCard" onclick="window.location.href='fichaAnimal.php'">Adoptar
                             </button>
                         </div>
                     </div>
