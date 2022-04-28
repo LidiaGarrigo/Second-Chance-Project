@@ -81,12 +81,12 @@ $datos = json_decode($json, true);
             <p class="biografia"><?php echo $datos['adoptaAnimal']['perros'][0]['biografia']; ?></p>
             <p class="descripcion"><strong><?php echo $datos['adoptaAnimal']['perros'][0]['descripcion']; ?></strong></p>
             <ul class="lista">
-                <li><? echo $datos['adoptaAnimal']['perros'][0]['lista']['item1']; ?></li>
-                <li><? echo $datos['adoptaAnimal']['perros'][0]['lista']['item2']; ?></li>
-                <li><? echo $datos['adoptaAnimal']['perros'][0]['lista']['item3']; ?></li>
-                <li><? echo $datos['adoptaAnimal']['perros'][0]['lista']['item4']; ?></li>
-                <li><? echo $datos['adoptaAnimal']['perros'][0]['lista']['item5']; ?></li>
-                <li><? echo $datos['adoptaAnimal']['perros'][0]['lista']['item6']; ?></li>
+                <li><?php echo $datos['adoptaAnimal']['perros'][0]['lista']['item1']; ?></li>
+                <li><?php echo $datos['adoptaAnimal']['perros'][0]['lista']['item2']; ?></li>
+                <li><?php echo $datos['adoptaAnimal']['perros'][0]['lista']['item3']; ?></li>
+                <li><?php echo $datos['adoptaAnimal']['perros'][0]['lista']['item4']; ?></li>
+                <li><?php echo $datos['adoptaAnimal']['perros'][0]['lista']['item5']; ?></li>
+                <li><?php echo $datos['adoptaAnimal']['perros'][0]['lista']['item6']; ?></li>
             </ul>
             </div>
             <div class="containerButton">
