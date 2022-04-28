@@ -1,3 +1,10 @@
+<?php
+
+$json = file_get_contents('datos.json');
+$datos = json_decode($json, true);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,11 +19,40 @@
 </head>
 
 <body>
-<header id="encabezado">
-    <?php require "navbar.php" ?>
-</header>
+    <header id="encabezado">
+        <?php require "navbar.php" ?>
+    </header>
     <section id="formAdopcion">
+        <div id="contenedorForm">
 
+            <h3 class="titulosFormAdopcion">Datos personales</h3>
+            <form id="formulario" action="">
+                <label class="etiquetaFormu" for="">Nombre</label>
+                <input class="inputFormu" type="text" placeholder="Escribe tu nombre">
+                <label class="etiquetaFormu" for="">Apellidos</label>
+                <input class="inputFormu" type="text" placeholder="Escribe tus apellidos">
+                <label class="etiquetaFormu" for="">DNI</label>
+                <input class="inputFormu" type="text" placeholder="Escribe tu DNI">
+                <label class="etiquetaFormu" for="">Teléfono</label>
+                <input class="inputFormu" type="tel" placeholder="Escribe tu teléfono">
+                <label class="etiquetaFormu" for="">Correo electrónico</label>
+                <input class="inputFormu" type="email" placeholder="Escribe tu correo electrónico">
+
+                <h3 class="titulosFormAdopcion">términos de la adopción</h3>
+                <p><?php echo $datos['formularioAdopcion']['parrafo1']; ?></p>
+                <p><?php echo $datos['formularioAdopcion']['parrafo2']; ?></p>
+                <p><?php echo $datos['formularioAdopcion']['parrafo3']; ?></p>
+
+                <label>
+                    <input type="checkbox" id="cbox1" value=""><?php echo $datos['formularioAdopcion']['checkbox']; ?>
+                </label>
+                <div class="contenedor-btn">
+                    <button id="btn-confirmar">Confirmar adopción</button>
+
+                </div>
+            </form>
+
+        </div>
     </section>
 </body>
 
