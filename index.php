@@ -15,6 +15,7 @@ $datos = json_decode($json, true);
     <title>Second chance</title>
     <link rel="stylesheet" href="Css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Playfair+Display&display=swap" rel="stylesheet">
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 
 </head>
@@ -154,6 +155,57 @@ $datos = json_decode($json, true);
     </section>
 
     <footer>
+        <div class="datosEmpresa">
+            <img id="whiteLogo" src="assets/logos/second_chance-modified.png" alt="logo en blanco y negro" width="200">
+            <p>Pg. de Gràcia, 1, 08007 Barcelona</p>
+            <p>932 95 05 00</p>
+            <p>secondchance@gmail.com</p>
+            <div class="socialLinks">
+                <img src="assets/socialLinks/Instagram.png" alt="Instagram">
+                <img src="assets/socialLinks/Linkedin.png" alt="Linkedin">
+                <img src="assets/socialLinks/Twitter.png" alt="Twitter">
+                <img src="assets/socialLinks/Youtube.png" alt="Youtube">
+            </div>
+            <p>Copyright © 2022 Second Chance. All rights reserved</p>
+        </div>
+        <div class="horarioTextosBoletin">
+            <div class="horarioAtencion">
+                <h3 class="titulosFooter">Horario de atención</h3>
+                <div class="horario">
+                    <div class="dias">
+                        <p>Lunes:</p>
+                        <p>Martes:</p>
+                        <p>Miércoles:</p>
+                        <p>Jueves:</p>
+                        <p>Viernes:</p>
+                        <p>Sábado:</p>
+                        <p>Domingo:</p>
+                    </div>
+                    <div class="horas">
+                        <p>9:00h-15:00h</p>
+                        <p>9:00h-15:00h</p>
+                        <p>9:00h-15:00h</p>
+                        <p>9:00h-15:00h</p>
+                        <p>9:00h-14:00h</p>
+                        <p>9:00h-14:00h</p>
+                        <p>9:00h-12:00h</p>
+                    </div>
+                </div>
+            </div>
+            <div class="textosLegales">
+                <h3 class="titulosFooter">Textos legales</h3>
+                <p>Política de privacidad</p>
+                <p>Política legal</p>
+                <p>Política de cookies</p>
+            </div>
+            <div class="boletin">
+            <h3 class="titulosFooter">Suscríbete a nuestro boletín de noticias</h3>
+                <div class="inputBoletin">
+                    <input type="text" placeholder="Escribe tu correo electrónico">
+                    <span class="iconify" data-icon="icon-park-outline:send" style="color: white;" data-width="24"></span>
+                </div>
+            </div>
+        </div>
 
     </footer>
 

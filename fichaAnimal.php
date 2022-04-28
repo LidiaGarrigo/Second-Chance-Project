@@ -44,27 +44,27 @@ $datos = json_decode($json, true);
 
                     <div class="mySlides">
                         <div class="numbertext">1 / 5</div>
-                        <img src="assets/animales/perros/perro1/perro1.png" style="width:90%;">
+                        <img src="assets/animales/perros/perro1/perro1.png" style="width:100%;">
                     </div>
 
                     <div class="mySlides">
                         <div class="numbertext">2 / 5</div>
-                        <img src="assets/animales/perros/perro1/perro1-1.jpg" style="width:90%">
+                        <img src="assets/animales/perros/perro1/perro1-1.jpg" style="width:100%">
                     </div>
 
                     <div class="mySlides">
                         <div class="numbertext">3 / 5</div>
-                        <img src="assets/animales/perros/perro1/perro1-2.jpg" style="width:90%">
+                        <img src="assets/animales/perros/perro1/perro1-2.jpg" style="width:100%">
                     </div>
 
                     <div class="mySlides">
                         <div class="numbertext">4 / 5</div>
-                        <img src="assets/animales/perros/perro1/perro1-3.jpg" style="width:90%">
+                        <img src="assets/animales/perros/perro1/perro1-3.jpg" style="width:100%">
                     </div>
 
                     <div class="mySlides">
                         <div class="numbertext">5 / 5</div>
-                        <img src="assets/animales/perros/perro1/perro1-4.jpg" style="width:90%">
+                        <img src="assets/animales/perros/perro1/perro1-4.jpg" style="width:100%">
                     </div>
 
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>

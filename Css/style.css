@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body {
     font-family: "Poppins", Helvetica, Arial, sans-serif;
 }
@@ -95,12 +97,13 @@ nav {
 }
 
 .titulo {
-    margin: 60px 0;
+    margin: 30px 0;
     font-weight: 600;
     font-size: 60px;
     line-height: 90px;
     color: #160e0d;
     text-align: center;
+    padding-top: 90px;
 }
 
 .contenido {
@@ -391,12 +394,7 @@ nav {
         url("../assets/ContactDog.png");
 }
 
-#contacto h1 {
-    padding-top: 60px;
-    margin-top: 0;
-}
-
-#contenedorContacto{
+#contenedorContacto {
     width: 1200px;
     height: 615px;
     margin-top: 70px;
@@ -405,7 +403,7 @@ nav {
     overflow: hidden;
 }
 
-#contenedorContacto > h2 {
+#contenedorContacto>h2 {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 300;
@@ -413,12 +411,12 @@ nav {
     line-height: 45px;
 }
 
-#formu{
+#formu {
     display: flex;
     flex-direction: column;
 }
 
-.etiquetaFormu{
+.etiquetaFormu {
     display: block;
     font-family: 'Poppins';
     font-style: normal;
@@ -429,7 +427,7 @@ nav {
     margin-top: 10px;
 }
 
-.inputFormu{
+.inputFormu {
     /* display: block; */
     border: 1px solid #AC8571;
     box-sizing: border-box;
@@ -442,7 +440,7 @@ nav {
     margin-top: 10px;
 }
 
-textarea{
+textarea {
     width: 977.28px;
     height: 137px;
     left: 0px;
@@ -458,7 +456,7 @@ textarea{
     margin-bottom: 25px;
 }
 
-::placeholder{
+form::placeholder {
     font-family: 'Poppins';
     font-style: normal;
     font-size: 20px;
@@ -468,7 +466,7 @@ textarea{
     color: #AC8571;
 }
 
-#btn-contacto{
+#btn-contacto {
     width: 977px;
     height: 72px;
     left: 477px;
@@ -482,8 +480,9 @@ textarea{
     transition-duration: 0.2s;
 }
 
-#btn-contacto:hover{
-    background-color: #EFB07D;;
+#btn-contacto:hover {
+    background-color: #EFB07D;
+    ;
 }
 
 /* ------------ Fin sección contacto ------------ */
@@ -491,9 +490,82 @@ textarea{
 /* ------------ Inicio sección Footer ------------ */
 footer {
     width: 100%;
-    height: 682px;
     background-color: #1d242b;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 120px;
 }
+#whiteLogo{
+    margin-bottom: 30px;
+}
+.datosEmpresa{
+    line-height: 34px;
+}
+.socialLinks{
+    margin: 30px 0;
+}
+.socialLinks img{
+    cursor: pointer;
+}
+
+.horarioTextosBoletin {
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+}
+
+.titulosFooter {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.horario {
+    display: flex;
+    justify-content: space-between;
+    line-height: 34px;
+}
+
+.textosLegales p {
+    line-height: 34px;
+}
+
+.boletin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputBoletin {
+    width: 80%;
+    background: #4A5055;
+    border-radius: 6px;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inputBoletin input, .inputBoletin input::placeholder {
+    -webkit-appearance: none;
+    border: none;
+    width: 85%;
+    background: #4A5055;
+    color: white;
+    font-family: 'Inter';
+    font-size: 16px;
+    line-height: 24px;
+}
+.inputBoletin input:focus{
+    outline: none;
+}
+
+.inputBoletin input:focus::placeholder {
+    color: white;
+  }
 
 /* ------------ Fin sección Footer ------------ */
 
