@@ -110,7 +110,7 @@ $datos = json_decode($json, true);
                         <div class="infoCard">
                             <div class="textCard">
                                 <span><strong><?php echo $perro['nombreAnimal'] ?></strong></span>
-                                <span><?php echo $perro['sexo'] ?> - <? echo $perro['edad'] ?></span>
+                                <span><?php echo $perro['sexo'] ?> - <?php echo $perro['edad'] ?></span>
                             </div>
                             <button class="buttonCard" onclick="window.location.href='fichaAnimal.php'">Adoptar
                             </button>
@@ -123,7 +123,7 @@ $datos = json_decode($json, true);
                         <div class="infoCard">
                             <div class="textCard">
                                 <span><strong><?php echo $gato['nombreAnimal'] ?></strong></span>
-                                <span><?php echo $gato['sexo'] ?> - <? echo $gato['edad'] ?></span>
+                                <span><?php echo $gato['sexo'] ?> - <?php echo $gato['edad'] ?></span>
                             </div>
                             <button class="buttonCard" onclick="window.location.href='fichaAnimal.php'">Adoptar
                             </button>
