@@ -54,7 +54,7 @@ nav {
 .elementoMenu>a {
     text-decoration: none;
     font-size: 20px;
-    color: #160E0D;
+    color: #160e0d;
 }
 
 .slogan {
@@ -73,8 +73,9 @@ nav {
     font-size: 40px;
     line-height: 60px;
     text-align: center;
-    color: #160E0D;
+    color: #160e0d;
 }
+
 /* ------------ Fin sección encabezado ------------ */
 
 /* ------------ Inicio sección sobre nosotros ------------ */
@@ -82,7 +83,7 @@ nav {
 #sobreNosotros {
     width: 100%;
     padding: 0 130px;
-    background: #FBF8F6;
+    background: #fbf8f6;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -98,7 +99,7 @@ nav {
     font-weight: 600;
     font-size: 60px;
     line-height: 90px;
-    color: #160E0D;
+    color: #160e0d;
     text-align: center;
 }
 
@@ -110,6 +111,7 @@ nav {
     text-align: center;
     margin: 2% 0;
 }
+
 /* ------------ Fin sección sobre nosotros ------------ */
 
 /* ------------ Inicio sección adopta un animal ------------ */
@@ -122,7 +124,7 @@ nav {
 .main {
     width: 100%;
     display: flex;
-    gap: 40px; /* //media query para dispositivos large */
+    gap: 40px;
 }
 
 .contenedorFiltro {
@@ -131,7 +133,7 @@ nav {
 
 .containerLabel {
     width: 350px;
-    background: #A09592;
+    background: #a09592;
     border-radius: 6px;
     padding: 6px 16px;
     margin-bottom: 20px;
@@ -145,7 +147,7 @@ nav {
 }
 
 .inputBuscar {
-    border: 1px solid #A09592;
+    border: 1px solid #a09592;
     box-sizing: border-box;
     border-radius: 4px;
     display: flex;
@@ -161,7 +163,7 @@ nav {
 
 .containerCheck {
     margin: 16px 0px;
-    color: #A09592;
+    color: #a09592;
     line-height: 24px;
 }
 
@@ -175,13 +177,13 @@ nav {
     float: right;
     width: 100%;
     display: flex;
-    gap: 12px; /* //media query para dispositivos large */
+    gap: 12px;
     flex-wrap: wrap;
 }
 
 .card {
     width: 250px;
-    height:331.5px;
+    height: 331.5px;
     border-radius: 10px;
     display: flex;
     align-items: flex-end;
@@ -189,8 +191,8 @@ nav {
 
 .card:hover {
     cursor: pointer;
-/*     filter: drop-shadow(0px 14px 28px rgba(0, 0, 0, 0.25)); */
-   /*  transform: translateY(-5px) scale(1.005) translateZ(0);
+    /*     filter: drop-shadow(0px 14px 28px rgba(0, 0, 0, 0.25)); */
+    /*  transform: translateY(-5px) scale(1.005) translateZ(0);
     transition: all 0.3s ease-out; */
 
     -webkit-box-shadow: 0 2px 15px 0 rgb(0 0 0 / 20%);
@@ -198,96 +200,143 @@ nav {
     -webkit-transform: translateY(-5px) scale(1.005) translateZ(0);
     -ms-transform: translateY(-5px) scale(1.005) translateZ(0);
     transform: translateY(-5px) scale(1.005) translateZ(0);
-    -webkit-transition: -webkit-transform linear .125s;
-    transition: -webkit-transform linear .125s;
-    transition: transform linear .125s;
-    transition: transform linear .125s,-webkit-transform linear .125s;
+    -webkit-transition: -webkit-transform linear 0.125s;
+    transition: -webkit-transform linear 0.125s;
+    transition: transform linear 0.125s;
+    transition: transform linear 0.125s, -webkit-transform linear 0.125s;
 }
 
 #perro1 {
-    background-image: linear-gradient(180deg, rgba(205, 189, 189, 0) 60%, rgb(220, 200, 200) 100%), url(../assets/animales/perros/perro1/perro1.png);
+    background-image: linear-gradient(180deg,
+            rgba(205, 189, 189, 0) 60%,
+            rgb(220, 200, 200) 100%),
+        url(../assets/animales/perros/perro1/perro1.png);
     background-size: cover;
     background-position: center;
 }
 
 #perro2 {
-    background-image: linear-gradient(180deg, rgba(205, 189, 189, 0) 60%, rgb(220, 200, 200) 100%), url(../assets/animales/perros/perro2/perro2.png);
+    background-image: linear-gradient(180deg,
+            rgba(205, 189, 189, 0) 60%,
+            rgb(220, 200, 200) 100%),
+        url(../assets/animales/perros/perro2/perro2.png);
     background-size: cover;
     background-position: center;
 }
 
 #perro3 {
-    background-image: linear-gradient(180deg, rgba(205, 189, 189, 0) 60%, rgb(220, 200, 200) 100%), url(../assets/animales/perros/perro3/perro3.png);
+    background-image: linear-gradient(180deg,
+            rgba(205, 189, 189, 0) 60%,
+            rgb(220, 200, 200) 100%),
+        url(../assets/animales/perros/perro3/perro3.png);
     background-size: cover;
     background-position: center;
 }
 
 #perro4 {
-    background-image: linear-gradient(180deg, rgba(205, 189, 189, 0) 60%, rgb(220, 200, 200) 100%), url(../assets/animales/perros/perro4/perro4.png);
+    background-image: linear-gradient(180deg,
+            rgba(205, 189, 189, 0) 60%,
+            rgb(220, 200, 200) 100%),
+        url(../assets/animales/perros/perro4/perro4.png);
     background-size: cover;
     background-position: center;
 }
 
 #perro5 {
-    background-image: linear-gradient(180deg, rgba(205, 189, 189, 0) 60%, rgb(220, 200, 200) 100%), url(../assets/animales/perros/perro5/perro5.png);
+    background-image: linear-gradient(180deg,
+            rgba(205, 189, 189, 0) 60%,
+            rgb(220, 200, 200) 100%),
+        url(../assets/animales/perros/perro5/perro5.png);
     background-size: cover;
     background-position: center;
 }
 
 #perro6 {
-    background-image: linear-gradient(180deg, rgba(205, 189, 189, 0) 60%, rgb(220, 200, 200) 100%), url(../assets/animales/perros/perro6/perro6.png);
+    background-image: linear-gradient(180deg,
+            rgba(205, 189, 189, 0) 60%,
+            rgb(220, 200, 200) 100%),
+        url(../assets/animales/perros/perro6/perro6.png);
     background-size: cover;
     background-position: center;
 }
 
 #perro7 {
-    background-image: linear-gradient(180deg, rgba(205, 189, 189, 0) 60%, rgb(220, 200, 200) 100%), url(../assets/animales/perros/perro7/perro7.png);
+    background-image: linear-gradient(180deg,
+            rgba(205, 189, 189, 0) 60%,
+            rgb(220, 200, 200) 100%),
+        url(../assets/animales/perros/perro7/perro7.png);
     background-size: cover;
     background-position: center;
 }
 
 #perro8 {
-    background-image: linear-gradient(180deg, rgba(205, 189, 189, 0) 60%, rgb(220, 200, 200) 100%), url(../assets/animales/perros/perro8/perro8.png);
+    background-image: linear-gradient(180deg,
+            rgba(205, 189, 189, 0) 60%,
+            rgb(220, 200, 200) 100%),
+        url(../assets/animales/perros/perro8/perro8.png);
     background-size: cover;
     background-position: center;
 }
+
 #perro9 {
-    background-image: linear-gradient(180deg, rgba(205, 189, 189, 0) 60%, rgb(220, 200, 200) 100%), url(../assets/animales/perros/perro9/perro9.png);
+    background-image: linear-gradient(180deg,
+            rgba(205, 189, 189, 0) 60%,
+            rgb(220, 200, 200) 100%),
+        url(../assets/animales/perros/perro9/perro9.png);
     background-size: cover;
     background-position: center;
 }
+
 #perro10 {
-    background-image: linear-gradient(180deg, rgba(205, 189, 189, 0) 60%, rgb(220, 200, 200) 100%), url(../assets/animales/perros/perro10/perro10.png);
+    background-image: linear-gradient(180deg,
+            rgba(205, 189, 189, 0) 60%,
+            rgb(220, 200, 200) 100%),
+        url(../assets/animales/perros/perro10/perro10.png);
     background-size: cover;
     background-position: center;
 }
 
 #gato1 {
-    background-image: linear-gradient(180deg, rgba(205, 189, 189, 0) 60%, rgb(220, 200, 200) 100%), url(../assets/animales/gatos/gato1/gato1.png);
+    background-image: linear-gradient(180deg,
+            rgba(205, 189, 189, 0) 60%,
+            rgb(220, 200, 200) 100%),
+        url(../assets/animales/gatos/gato1/gato1.png);
     background-size: cover;
     background-position: center;
 }
 
 #gato2 {
-    background-image: linear-gradient(180deg, rgba(205, 189, 189, 0) 60%, rgb(220, 200, 200) 100%), url(../assets/animales/gatos/gato2/gato2.png);
+    background-image: linear-gradient(180deg,
+            rgba(205, 189, 189, 0) 60%,
+            rgb(220, 200, 200) 100%),
+        url(../assets/animales/gatos/gato2/gato2.png);
     background-size: cover;
     background-position: center;
 }
 
 #gato3 {
-    background-image: linear-gradient(180deg, rgba(205, 189, 189, 0) 60%, rgb(220, 200, 200) 100%), url(../assets/animales/gatos/gato3/gato3.png);
+    background-image: linear-gradient(180deg,
+            rgba(205, 189, 189, 0) 60%,
+            rgb(220, 200, 200) 100%),
+        url(../assets/animales/gatos/gato3/gato3.png);
     background-size: cover;
     background-position: center;
 }
 
 #gato4 {
-    background-image: linear-gradient(180deg, rgba(205, 189, 189, 0) 60%, rgb(220, 200, 200) 100%), url(../assets/animales/gatos/gato4/gato4.png);
+    background-image: linear-gradient(180deg,
+            rgba(205, 189, 189, 0) 60%,
+            rgb(220, 200, 200) 100%),
+        url(../assets/animales/gatos/gato4/gato4.png);
     background-size: cover;
     background-position: center;
 }
 
 #gato5 {
-    background-image: linear-gradient(180deg, rgba(205, 189, 189, 0) 60%, rgb(220, 200, 200) 100%), url(../assets/animales/gatos/gato5/gato5.png);
+    background-image: linear-gradient(180deg,
+            rgba(205, 189, 189, 0) 60%,
+            rgb(220, 200, 200) 100%),
+        url(../assets/animales/gatos/gato5/gato5.png);
     background-size: cover;
     background-position: center;
 }
@@ -301,7 +350,7 @@ nav {
 
 .buttonCard {
     color: white;
-    background-color: #AC8571;
+    background-color: #ac8571;
     font-size: 20px;
     margin-top: 8px;
     border: none;
@@ -311,7 +360,7 @@ nav {
 }
 
 .buttonCard:hover {
-    background-color: #EFB07D;
+    background-color: #efb07d;
     cursor: pointer;
 }
 
@@ -325,17 +374,21 @@ nav {
     color: #867170;
     margin: 60px 0;
 }
-.mas:hover{
-text-decoration: underline;
-cursor: pointer;
+
+.mas:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
+
 /* ------------ Fin sección adopta un animal ------------ */
 
 /* ------------ Inicio sección contacto ------------ */
 #contacto {
     width: 100%;
     height: 1080px;
-    background: linear-gradient(rgba(255, 255, 255, 0.86), rgba(255, 255, 255, 0.86)), url("../assets/ContactDog.png");
+    background: linear-gradient(rgba(255, 255, 255, 0.86),
+            rgba(255, 255, 255, 0.86)),
+        url("../assets/ContactDog.png");
 }
 
 #contacto h1 {
@@ -439,6 +492,20 @@ textarea{
 footer {
     width: 100%;
     height: 682px;
-    background-color: #1D242B;
+    background-color: #1d242b;
 }
+
 /* ------------ Fin sección Footer ------------ */
+
+
+/* <!--------------Responsive----------------> */
+
+@media screen and (min-width: 1900px) {
+    .main {
+        gap: 80px;
+    }
+
+    .containerCards {
+        gap: 64px;
+    }
+}

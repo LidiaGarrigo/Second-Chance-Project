@@ -3,3 +3,164 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container {
+    padding: 8% 130px 80px 130px;
+    display: flex;
+}
+
+.fichaAnimal {
+    margin-left: 40px;
+    width: 67%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tituloNombre {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #AC8571;
+    text-transform: uppercase;
+}
+
+.biografia {
+    margin: 30px 0 20px 0;
+    color: #160E0D;
+}
+
+.descripcion {
+    margin-bottom: 20px;
+}
+
+.lista {
+    padding-left: 2%;
+    line-height: 34px;
+}
+
+.containerButton button {
+    bottom: 0;
+    border: none;
+    padding: 21px 45px;
+    background-color: #AC8571;
+    border-radius: 6px;
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.containerButton button:hover {
+    background-color: #EFB07D;
+    ;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    width: 501px;
+}
+
+/* Background del Modal (lightbox) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(48, 44, 44, 0.8);
+}
+
+/* Modal Content */
+.modal-content {
+    position: absolute;
+    padding: 0;
+    width: 40%;
+    max-width: 1200px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+/* Botón cerrar modal (lightbox) */
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mySlides {
+    display: none;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Posicionamos el botón de siguiente a la derecha */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Hover, añade color de fondo a los botones de siguiente y anterior */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* paginación */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
