@@ -396,6 +396,96 @@ nav {
     margin-top: 0;
 }
 
+#contenedorContacto{
+    width: 1200px;
+    height: 615px;
+    margin-top: 70px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+}
+
+#contenedorContacto > h2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 45px;
+}
+
+#formu{
+    display: flex;
+    flex-direction: column;
+}
+
+.etiquetaFormu{
+    display: block;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #AC8571;
+    margin-top: 10px;
+}
+
+.inputFormu{
+    /* display: block; */
+    border: 1px solid #AC8571;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.0);
+    width: 977.28px;
+    height: 48px;
+    left: 0px;
+    top: 38px;
+    margin-top: 10px;
+}
+
+textarea{
+    width: 977.28px;
+    height: 137px;
+    left: 0px;
+    top: 32px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 30px;
+    border: 1px solid #AC8571;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.0);
+    margin-bottom: 25px;
+}
+
+::placeholder{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+    text-indent: 16px;
+    color: #AC8571;
+}
+
+#btn-contacto{
+    width: 977px;
+    height: 72px;
+    left: 477px;
+    top: 2000px;
+    font-size: 20px;
+    color: #FFFFFF;
+    background: #AC8571;
+    box-sizing: border-box;
+    border-radius: 6px;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+#btn-contacto:hover{
+    background-color: #EFB07D;;
+}
+
 /* ------------ Fin sección contacto ------------ */
 
 /* ------------ Inicio sección Footer ------------ */
