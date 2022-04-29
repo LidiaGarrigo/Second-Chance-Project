@@ -148,7 +148,7 @@ $datos = json_decode($json, true);
                 <label class="etiquetaFormu" for="">Correo electrónico</label>
                 <input class="inputFormu" type="email" placeholder="Escribe tu correo electrónico">
                 <label class="etiquetaFormu" for="">Mensaje</label>
-                <textarea placeholder="Escribe lo que quieras comentarnos" name="" id="" cols="30" rows="10"></textarea>
+                <textarea class="inputFormu" placeholder="Escribe lo que quieras comentarnos" name="" id="" cols="30" rows="10"></textarea>
                 <button id="btn-contacto">Enviar</button>
             </form>
         </div>

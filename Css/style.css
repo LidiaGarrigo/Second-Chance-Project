@@ -400,7 +400,7 @@ nav {
 
 #contenedorContacto {
     width: 60%;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 #contenedorContacto>h2 {
@@ -433,7 +433,7 @@ nav {
     padding: 12px 16px;
 }
 
-#formu input::placeholder {
+#formu input::placeholder, #formulario input::placeholder {
     -webkit-appearance: none;
     font-size: 20px;
     line-height: 30px;
@@ -450,14 +450,9 @@ nav {
 
 textarea {
     height: 137px;
-    color: #AC8571;
     font-size: 20px;
     line-height: 30px;
-    border: 1px solid #AC8571;
-    border-radius: 4px;
-    background-color: rgba(0, 0, 0, 0.0);
     margin-bottom: 25px;
-    padding: 12px 16px;
     font-family: 'Poppins';
 }
 
