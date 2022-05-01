@@ -27,12 +27,12 @@ $datos = json_decode($json, true);
         <div class="lightBox">
             <div class="row">
                 <div class="column">
-                    <img src="assets/animales/perros/perro1/perro1.png" style="width:501px;cursor:pointer;" onclick="openModal();currentSlide(1)">
-                    <div style="display:flex; justify-content: center; gap: 7px;">
-                        <img src="assets/animales/perros/perro1/perro1-1.png" style="width:120px;cursor:pointer;" onclick="openModal();currentSlide(2)">
-                        <img src="assets/animales/perros/perro1/perro1-2.png" style="width:120px;cursor:pointer;" onclick="openModal();currentSlide(3)">
-                        <img src="assets/animales/perros/perro1/perro1-3.png" style="width:120px;cursor:pointer;" onclick="openModal();currentSlide(4)">
-                        <img src="assets/animales/perros/perro1/perro1-4.png" style="width:120px;cursor:pointer;" onclick="openModal();currentSlide(5)">
+                    <img id="imgCentral" src="assets/animales/perros/perro1/perro1.png" onclick="openModal();currentSlide(1)">
+                    <div id="contenedorImg">
+                        <img src="assets/animales/perros/perro1/perro1-1.jpg" onclick="openModal();currentSlide(2)">
+                        <img src="assets/animales/perros/perro1/perro1-2.jpg" onclick="openModal();currentSlide(3)">
+                        <img src="assets/animales/perros/perro1/perro1-3.jpg" onclick="openModal();currentSlide(4)">
+                        <img src="assets/animales/perros/perro1/perro1-4.jpg" onclick="openModal();currentSlide(5)">
                     </div>
                 </div>
 

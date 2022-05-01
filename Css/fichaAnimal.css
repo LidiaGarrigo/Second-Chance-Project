@@ -67,6 +67,24 @@
     width: 501px;
 }
 
+#imgCentral {
+    width: 501px;
+    cursor: pointer;
+}
+
+#contenedorImg {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+}
+
+#contenedorImg img {
+    width: 120px;
+    cursor: pointer;
+    object-fit: cover;
+    height: 120px;
+}
+
 /* Background del Modal (lightbox) */
 .modal {
     display: none;
