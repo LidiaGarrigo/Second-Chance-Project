@@ -6,7 +6,7 @@
 
 #formAdopcion{
     width: 100%;
-    background: url("../assets/fondo_formulario.png") no-repeat;
+    background: url("../assets/fondo_formulario.png") no-repeat center;
     padding: 4% 20% 2% 20%;
     font-family: 'Poppins';
     background-size: cover;
