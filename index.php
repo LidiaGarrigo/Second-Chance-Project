@@ -140,19 +140,25 @@ $datos = json_decode($json, true);
         <h1 class="titulo">Contacto</h1>
         <div id="contenedorContacto">
             <h2>¿En qué podemos ayudarte?</h2>
-            <form id="formu" action="">
-                <label class="etiquetaFormu" for="">Nombre</label>
-                <input class="inputFormu" type="text" placeholder="Escribe tu nombre">
-                <label class="etiquetaFormu" for="">Teléfono</label>
-                <input class="inputFormu" type="tel" placeholder="Escribe tu teléfono">
-                <label class="etiquetaFormu" for="">Correo electrónico</label>
-                <input class="inputFormu" type="email" placeholder="Escribe tu correo electrónico">
-                <label class="etiquetaFormu" for="">Mensaje</label>
-                <textarea class="inputFormu" placeholder="Escribe lo que quieras comentarnos" name="" id="" cols="30" rows="10"></textarea>
-                <button id="btn-contacto">Enviar</button>
+            <form id="formu" action="modal.php" name="formulario" method="POST">
+                <label class="etiquetaFormu" for="nombre">Nombre</label>
+                <input class="inputFormu" type="text" placeholder="Escribe tu nombre" name="nombre" id="nombre" required>
+
+                <label class="etiquetaFormu" for="telefono">Teléfono</label>
+                <input class="inputFormu" type="tel" placeholder="Escribe tu teléfono" name="telefono" id="telefono" required>
+
+                <label class="etiquetaFormu" for="email">Correo electrónico</label>
+                <input class="inputFormu" type="email" placeholder="Escribe tu correo electrónico" name="email" id="email" required>
+
+                <label class="etiquetaFormu" for="mensaje">Mensaje</label>
+                <textarea class="inputFormu" placeholder="Escribe lo que quieras comentarnos" name="mensaje" id="mensaje" cols="30" rows="10" required></textarea>
+
+                <button class="btn-primario" type="submit">Enviar</button>
             </form>
         </div>
     </section>
+
+
 
     <footer>
         <div class="datosEmpresa">
@@ -200,10 +206,13 @@ $datos = json_decode($json, true);
             </div>
             <div class="boletin">
             <h3 class="titulosFooter">Suscríbete a nuestro boletín de noticias</h3>
-                <div class="inputBoletin">
-                    <input type="text" placeholder="Escribe tu correo electrónico">
-                    <span class="iconify" data-icon="icon-park-outline:send" style="color: white;" data-width="24"></span>
+            <form action="" method="POST" class="boletinForm">
+            <div class="inputBoletin">
+                    <input type="text" placeholder="Escribe tu correo electrónico" name="email" id="email">
+                    <button type="submit" class="btnIcon"><span class="iconify" data-icon="icon-park-outline:send" style="color: white;" data-width="24"></span></button>
+                    
                 </div>
+            </form>
             </div>
         </div>
 
