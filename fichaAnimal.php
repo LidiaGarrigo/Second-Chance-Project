@@ -15,7 +15,7 @@ $datos = json_decode($json, true);
     <link rel="stylesheet" href="Css/fichaAnimal.css">
     <link rel="stylesheet" href="Css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap" rel="stylesheet">
-    <script src="JS/script.js"></script>
+    <script src="JS/lightbox.js"></script>
 </head>
 
 <body>
@@ -38,7 +38,7 @@ $datos = json_decode($json, true);
 
             </div>
 
-            <div id="myModal" class="modal">
+            <div id="myModal">
                 <span class="close cursor" onclick="closeModal()">&times;</span>
                 <div class="modal-content">
 

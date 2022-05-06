@@ -3,6 +3,8 @@
 $json = file_get_contents('datos.json');
 $datos = json_decode($json, true);
 
+/* include("db.php"); */
+
 ?>
 
 <!DOCTYPE html>
@@ -16,8 +18,9 @@ $datos = json_decode($json, true);
     <link rel="stylesheet" href="Css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Playfair+Display&display=swap" rel="stylesheet">
+    <script src="JS/script.js"></script>
+    	<!-- iconify library -->
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
-
 </head>
 
 <body>
@@ -60,11 +63,11 @@ $datos = json_decode($json, true);
                         <label for="" class="label">Filtrar por especie</label>
                     </div>
                     <div class="containerCheck">
-                        <input class="inputCheck" type="checkbox">
+                        <input class="inputCheck" type="checkbox" checked="checked">
                         <label for="perro">Perro (10)</label>
                     </div>
                     <div class="containerCheck">
-                        <input class="inputCheck" type="checkbox">
+                        <input class="inputCheck" type="checkbox" checked="checked">
                         <label for="gato">Gato (5)</label>
                     </div>
                 </div>
@@ -140,25 +143,23 @@ $datos = json_decode($json, true);
         <h1 class="titulo">Contacto</h1>
         <div id="contenedorContacto">
             <h2>¿En qué podemos ayudarte?</h2>
-            <form id="formu" action="modal.php" name="formulario" method="POST">
+            <form id="formu" action="contacto.php" name="formulario" method="POST">
                 <label class="etiquetaFormu" for="nombre">Nombre</label>
-                <input class="inputFormu" type="text" placeholder="Escribe tu nombre" name="nombre" id="nombre" required>
+                <input class="inputFormu" type="text" placeholder="Escribe tu nombre" name="nombre" id="nombre" >
 
                 <label class="etiquetaFormu" for="telefono">Teléfono</label>
-                <input class="inputFormu" type="tel" placeholder="Escribe tu teléfono" name="telefono" id="telefono" required>
+                <input class="inputFormu" type="tel" placeholder="Escribe tu teléfono" name="telefono" id="telefono" >
 
                 <label class="etiquetaFormu" for="email">Correo electrónico</label>
-                <input class="inputFormu" type="email" placeholder="Escribe tu correo electrónico" name="email" id="email" required>
+                <input class="inputFormu" type="email" placeholder="Escribe tu correo electrónico" name="email" id="email" >
 
                 <label class="etiquetaFormu" for="mensaje">Mensaje</label>
-                <textarea class="inputFormu" placeholder="Escribe lo que quieras comentarnos" name="mensaje" id="mensaje" cols="30" rows="10" required></textarea>
+                <textarea class="inputFormu" placeholder="Escribe lo que quieras comentarnos" name="mensaje" id="mensaje" cols="30" rows="10" ></textarea>
 
-                <button class="btn-primario" type="submit">Enviar</button>
+                <button class="btn-primario" type="submit" onclick="modalContacto()">Enviar</button>
             </form>
         </div>
     </section>
-
-
 
     <footer>
         <div class="datosEmpresa">
@@ -206,11 +207,10 @@ $datos = json_decode($json, true);
             </div>
             <div class="boletin">
             <h3 class="titulosFooter">Suscríbete a nuestro boletín de noticias</h3>
-            <form action="" method="POST" class="boletinForm">
+            <form action="boletin.php" method="POST" class="boletinForm">
             <div class="inputBoletin">
-                    <input type="text" placeholder="Escribe tu correo electrónico" name="email" id="email">
+                    <input type="text" placeholder="Escribe tu correo electrónico" name="emailB" id="email">
                     <button type="submit" class="btnIcon"><span class="iconify" data-icon="icon-park-outline:send" style="color: white;" data-width="24"></span></button>
-                    
                 </div>
             </form>
             </div>
