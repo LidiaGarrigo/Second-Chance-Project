@@ -86,7 +86,7 @@
 }
 
 /* Background del Modal (lightbox) */
-.modal {
+#myModal {
     display: none;
     position: fixed;
     z-index: 1;
