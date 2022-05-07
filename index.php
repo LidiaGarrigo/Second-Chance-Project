@@ -3,7 +3,7 @@
 $json = file_get_contents('datos.json');
 $datos = json_decode($json, true);
 
-/* include("db.php"); */
+include("animales.php");
 
 ?>
 
@@ -19,7 +19,7 @@ $datos = json_decode($json, true);
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Playfair+Display&display=swap" rel="stylesheet">
     <script src="JS/script.js"></script>
-    	<!-- iconify library -->
+    <!-- iconify library -->
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 </head>
 
@@ -107,32 +107,18 @@ $datos = json_decode($json, true);
             </aside>
 
             <div class="containerCards">
-                <?php foreach ($datos['adoptaAnimal']['perros'] as $perro) {
-                ?>
-                    <div class="card" id="perro<?php echo $perro['id']; ?>" onclick="window.location.href='fichaAnimal.php'">
+                <?php foreach ($animales as $animal) : ?>
+                    <div class="card" id="animal<?php echo $animal['id']; ?>" onclick="window.location.href='fichaAnimal.php?id=<?php echo $animal['id']; ?>'">
                         <div class="infoCard">
                             <div class="textCard">
-                                <span><strong><?php echo $perro['nombreAnimal'] ?></strong></span>
-                                <span><?php echo $perro['sexo'] ?> - <?php echo $perro['edad'] ?></span>
+                                <span><strong><?php echo $animal['nombre'] ?></strong></span>
+                                <span><?php echo $animal['sexo'] ?> - <?php echo $animal['edad'] ?> años</span>
                             </div>
-                            <button class="buttonCard" onclick="window.location.href='fichaAnimal.php'">Adoptar
+                            <button class="buttonCard" onclick="window.location.href='fichaAnimal.php?id=<?php echo $animal['id']; ?>'">Adoptar
                             </button>
                         </div>
                     </div>
-                <?php } ?>
-                <?php foreach ($datos['adoptaAnimal']['gatos'] as $gato) {
-                ?>
-                    <div class="card" id="gato<?php echo $gato['id']; ?>" onclick="window.location.href='fichaAnimal.php'">
-                        <div class="infoCard">
-                            <div class="textCard">
-                                <span><strong><?php echo $gato['nombreAnimal'] ?></strong></span>
-                                <span><?php echo $gato['sexo'] ?> - <?php echo $gato['edad'] ?></span>
-                            </div>
-                            <button class="buttonCard" onclick="window.location.href='fichaAnimal.php'">Adoptar
-                            </button>
-                        </div>
-                    </div>
-                <?php } ?>
+                <?php endforeach; ?>
             </div>
         </div>
         <!--    <p class="mas">Mostrar más ...</p> -->
@@ -145,16 +131,16 @@ $datos = json_decode($json, true);
             <h2>¿En qué podemos ayudarte?</h2>
             <form id="formu" action="contacto.php" name="formulario" method="POST">
                 <label class="etiquetaFormu" for="nombre">Nombre</label>
-                <input class="inputFormu" type="text" placeholder="Escribe tu nombre" name="nombre" id="nombre" >
+                <input class="inputFormu" type="text" placeholder="Escribe tu nombre" name="nombre" id="nombre">
 
                 <label class="etiquetaFormu" for="telefono">Teléfono</label>
-                <input class="inputFormu" type="tel" placeholder="Escribe tu teléfono" name="telefono" id="telefono" >
+                <input class="inputFormu" type="tel" placeholder="Escribe tu teléfono" name="telefono" id="telefono">
 
                 <label class="etiquetaFormu" for="email">Correo electrónico</label>
-                <input class="inputFormu" type="email" placeholder="Escribe tu correo electrónico" name="email" id="email" >
+                <input class="inputFormu" type="email" placeholder="Escribe tu correo electrónico" name="email" id="email">
 
                 <label class="etiquetaFormu" for="mensaje">Mensaje</label>
-                <textarea class="inputFormu" placeholder="Escribe lo que quieras comentarnos" name="mensaje" id="mensaje" cols="30" rows="10" ></textarea>
+                <textarea class="inputFormu" placeholder="Escribe lo que quieras comentarnos" name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
 
                 <button class="btn-primario" type="submit" onclick="modalContacto()">Enviar</button>
             </form>
@@ -206,13 +192,13 @@ $datos = json_decode($json, true);
                 <p>Política de cookies</p>
             </div>
             <div class="boletin">
-            <h3 class="titulosFooter">Suscríbete a nuestro boletín de noticias</h3>
-            <form action="boletin.php" method="POST" class="boletinForm">
-            <div class="inputBoletin">
-                    <input type="text" placeholder="Escribe tu correo electrónico" name="emailB" id="email">
-                    <button type="submit" class="btnIcon"><span class="iconify" data-icon="icon-park-outline:send" style="color: white;" data-width="24"></span></button>
-                </div>
-            </form>
+                <h3 class="titulosFooter">Suscríbete a nuestro boletín de noticias</h3>
+                <form action="boletin.php" method="POST" class="boletinForm">
+                    <div class="inputBoletin">
+                        <input type="text" placeholder="Escribe tu correo electrónico" name="emailB" id="email">
+                        <button type="submit" class="btnIcon"><span class="iconify" data-icon="icon-park-outline:send" style="color: white;" data-width="24"></span></button>
+                    </div>
+                </form>
             </div>
         </div>
 
