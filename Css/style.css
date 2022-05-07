@@ -87,7 +87,7 @@ nav {
 #sobreNosotros {
     width: 100%;
     padding: 0 130px;
-    background: #fbf8f6;
+    background: #F5F1EC;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -110,11 +110,14 @@ nav {
 
 .contenido {
     margin-bottom: 40px;
+    padding: 0 6%;
 }
 
 .contenido p {
     text-align: center;
     margin: 2% 0;
+    font-size: 20px;
+
 }
 
 /* ------------ Fin sección sobre nosotros ------------ */
@@ -207,137 +210,137 @@ nav {
     transition: transform linear 0.125s, -webkit-transform linear 0.125s;
 }
 
-#perro1 {
+#animal1 {
     background-image: linear-gradient(180deg,
             rgba(205, 189, 189, 0) 60%,
             rgb(220, 200, 200) 100%),
-        url(../assets/animales/perros/perro1/perro1.png);
+        url(../assets/animales/animal1/perro1.png);
     background-size: cover;
     background-position: center;
 }
 
-#perro2 {
+#animal2 {
     background-image: linear-gradient(180deg,
             rgba(205, 189, 189, 0) 60%,
             rgb(220, 200, 200) 100%),
-        url(../assets/animales/perros/perro2/perro2.png);
+        url(../assets/animales/animal2/perro2.png);
     background-size: cover;
     background-position: center;
 }
 
-#perro3 {
+#animal3 {
     background-image: linear-gradient(180deg,
             rgba(205, 189, 189, 0) 60%,
             rgb(220, 200, 200) 100%),
-        url(../assets/animales/perros/perro3/perro3.png);
+        url(../assets/animales/animal3/perro3.png);
     background-size: cover;
     background-position: center;
 }
 
-#perro4 {
+#animal4 {
     background-image: linear-gradient(180deg,
             rgba(205, 189, 189, 0) 60%,
             rgb(220, 200, 200) 100%),
-        url(../assets/animales/perros/perro4/perro4.png);
+        url(../assets/animales/animal4/perro4.png);
     background-size: cover;
     background-position: center;
 }
 
-#perro5 {
+#animal5 {
     background-image: linear-gradient(180deg,
             rgba(205, 189, 189, 0) 60%,
             rgb(220, 200, 200) 100%),
-        url(../assets/animales/perros/perro5/perro5.png);
+        url(../assets/animales/animal5/perro5.png);
     background-size: cover;
     background-position: center;
 }
 
-#perro6 {
+#animal6 {
     background-image: linear-gradient(180deg,
             rgba(205, 189, 189, 0) 60%,
             rgb(220, 200, 200) 100%),
-        url(../assets/animales/perros/perro6/perro6.png);
+        url(../assets/animales/animal6/perro6.png);
     background-size: cover;
     background-position: center;
 }
 
-#perro7 {
+#animal7 {
     background-image: linear-gradient(180deg,
             rgba(205, 189, 189, 0) 60%,
             rgb(220, 200, 200) 100%),
-        url(../assets/animales/perros/perro7/perro7.png);
+        url(../assets/animales/animal7/perro7.png);
     background-size: cover;
     background-position: center;
 }
 
-#perro8 {
+#animal8 {
     background-image: linear-gradient(180deg,
             rgba(205, 189, 189, 0) 60%,
             rgb(220, 200, 200) 100%),
-        url(../assets/animales/perros/perro8/perro8.png);
+        url(../assets/animales/animal8/perro8.png);
     background-size: cover;
     background-position: center;
 }
 
-#perro9 {
+#animal9 {
     background-image: linear-gradient(180deg,
             rgba(205, 189, 189, 0) 60%,
             rgb(220, 200, 200) 100%),
-        url(../assets/animales/perros/perro9/perro9.png);
+        url(../assets/animales/animal9/perro9.png);
     background-size: cover;
     background-position: center;
 }
 
-#perro10 {
+#animal10 {
     background-image: linear-gradient(180deg,
             rgba(205, 189, 189, 0) 60%,
             rgb(220, 200, 200) 100%),
-        url(../assets/animales/perros/perro10/perro10.png);
+        url(../assets/animales/animal10/perro10.png);
     background-size: cover;
     background-position: center;
 }
 
-#gato1 {
+#animal11 {
     background-image: linear-gradient(180deg,
             rgba(205, 189, 189, 0) 60%,
             rgb(220, 200, 200) 100%),
-        url(../assets/animales/gatos/gato1/gato1.png);
+        url(../assets/animales/animal11/gato11.png);
     background-size: cover;
     background-position: center;
 }
 
-#gato2 {
+#animal12 {
     background-image: linear-gradient(180deg,
             rgba(205, 189, 189, 0) 60%,
             rgb(220, 200, 200) 100%),
-        url(../assets/animales/gatos/gato2/gato2.png);
+        url(../assets/animales/animal12/gato12.png);
     background-size: cover;
     background-position: center;
 }
 
-#gato3 {
+#animal13 {
     background-image: linear-gradient(180deg,
             rgba(205, 189, 189, 0) 60%,
             rgb(220, 200, 200) 100%),
-        url(../assets/animales/gatos/gato3/gato3.png);
+        url(../assets/animales/animal13/gato13.png);
     background-size: cover;
     background-position: center;
 }
 
-#gato4 {
+#animal14 {
     background-image: linear-gradient(180deg,
             rgba(205, 189, 189, 0) 60%,
             rgb(220, 200, 200) 100%),
-        url(../assets/animales/gatos/gato4/gato4.png);
+        url(../assets/animales/animal14/gato14.png);
     background-size: cover;
     background-position: center;
 }
 
-#gato5 {
+#animal15 {
     background-image: linear-gradient(180deg,
             rgba(205, 189, 189, 0) 60%,
             rgb(220, 200, 200) 100%),
-        url(../assets/animales/gatos/gato5/gato5.png);
+        url(../assets/animales/animal15/gato15.png);
     background-size: cover;
     background-position: center;
 }

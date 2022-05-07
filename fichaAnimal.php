@@ -3,6 +3,8 @@
 $json = file_get_contents('datos.json');
 $datos = json_decode($json, true);
 
+require 'detalleAnimal.php';
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,44 +29,45 @@ $datos = json_decode($json, true);
         <div class="lightBox">
             <div class="row">
                 <div class="column">
-                    <img id="imgCentral" src="assets/animales/perros/perro1/perro1.png" onclick="openModal();currentSlide(1)">
+                    <img id="imgCentral" src="assets/animales/animal<?php echo $animal['id']?>/<?php echo $animal['especie']?><?php echo $animal['id']?>.png" onclick="openModal();currentSlide(1)">
                     <div id="contenedorImg">
-                        <img src="assets/animales/perros/perro1/perro1-1.jpg" onclick="openModal();currentSlide(2)">
-                        <img src="assets/animales/perros/perro1/perro1-2.jpg" onclick="openModal();currentSlide(3)">
-                        <img src="assets/animales/perros/perro1/perro1-3.jpg" onclick="openModal();currentSlide(4)">
-                        <img src="assets/animales/perros/perro1/perro1-4.jpg" onclick="openModal();currentSlide(5)">
+                        <img src="assets/animales/animal<?php echo $animal['id']?>/<?php echo $animal['especie']?><?php echo $animal['id']?>-1.jpg" onclick="openModal();currentSlide(2)">
+                        <img src="assets/animales/animal<?php echo $animal['id']?>/<?php echo $animal['especie']?><?php echo $animal['id']?>-2.jpg" onclick="openModal();currentSlide(3)">
+                        <img src="assets/animales/animal<?php echo $animal['id']?>/<?php echo $animal['especie']?><?php echo $animal['id']?>-3.jpg" onclick="openModal();currentSlide(4)">
+                        <img src="assets/animales/animal<?php echo $animal['id']?>/<?php echo $animal['especie']?><?php echo $animal['id']?>-4.jpg" onclick="openModal();currentSlide(5)">
                     </div>
                 </div>
 
             </div>
 
+     
             <div id="myModal">
                 <span class="close cursor" onclick="closeModal()">&times;</span>
                 <div class="modal-content">
 
                     <div class="mySlides">
                         <div class="numbertext">1 / 5</div>
-                        <img src="assets/animales/perros/perro1/perro1.png" style="width:100%;">
+                        <img src="assets/animales/animal<?php echo $animal['id']?>/<?php echo $animal['especie']?><?php echo $animal['id']?>.png" style="width:100%;">
                     </div>
 
                     <div class="mySlides">
                         <div class="numbertext">2 / 5</div>
-                        <img src="assets/animales/perros/perro1/perro1-1.jpg" style="width:100%">
+                        <img src="assets/animales/animal<?php echo $animal['id']?>/<?php echo $animal['especie']?><?php echo $animal['id']?>-1.jpg" style="width:100%">
                     </div>
 
                     <div class="mySlides">
                         <div class="numbertext">3 / 5</div>
-                        <img src="assets/animales/perros/perro1/perro1-2.jpg" style="width:100%">
+                        <img src="assets/animales/animal<?php echo $animal['id']?>/<?php echo $animal['especie']?><?php echo $animal['id']?>-2.jpg" style="width:100%">
                     </div>
 
                     <div class="mySlides">
                         <div class="numbertext">4 / 5</div>
-                        <img src="assets/animales/perros/perro1/perro1-3.jpg" style="width:100%">
+                        <img src="assets/animales/animal<?php echo $animal['id']?>/<?php echo $animal['especie']?><?php echo $animal['id']?>-3.jpg" style="width:100%">
                     </div>
 
                     <div class="mySlides">
                         <div class="numbertext">5 / 5</div>
-                        <img src="assets/animales/perros/perro1/perro1-4.jpg" style="width:100%">
+                        <img src="assets/animales/animal<?php echo $animal['id']?>/<?php echo $animal['especie']?><?php echo $animal['id']?>-4.jpg" style="width:100%">
                     </div>
 
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -72,21 +75,29 @@ $datos = json_decode($json, true);
 
                 </div>
             </div>
+
+
         </div>
 
 
         <div class="fichaAnimal">
             <div>
-            <h3 class="tituloNombre"><?php echo $datos['adoptaAnimal']['perros'][0]['nombreAnimal']; ?></h3>
-            <p class="biografia"><?php echo $datos['adoptaAnimal']['perros'][0]['biografia']; ?></p>
-            <p class="descripcion"><strong><?php echo $datos['adoptaAnimal']['perros'][0]['descripcion']; ?></strong></p>
+            <h3 class="tituloNombre"><?php if(!empty($animal['nombre'])){ 
+                echo $animal['nombre'];
+            } else {
+                echo "Animal: " . $animal['id'];
+            }
+             ?></h3>
+       
+            <p class="biografia"><?php echo $animal['biografia']; ?></p>
+            <p class="descripcion"><strong>Descripción</strong></p>
             <ul class="lista">
-                <li><?php echo $datos['adoptaAnimal']['perros'][0]['lista']['item1']; ?></li>
-                <li><?php echo $datos['adoptaAnimal']['perros'][0]['lista']['item2']; ?></li>
-                <li><?php echo $datos['adoptaAnimal']['perros'][0]['lista']['item3']; ?></li>
-                <li><?php echo $datos['adoptaAnimal']['perros'][0]['lista']['item4']; ?></li>
-                <li><?php echo $datos['adoptaAnimal']['perros'][0]['lista']['item5']; ?></li>
-                <li><?php echo $datos['adoptaAnimal']['perros'][0]['lista']['item6']; ?></li>
+                <li>Sexo: <?php echo $animal['sexo']; ?></li>
+                <li>Raza: <?php echo $animal['raza']; ?></li>
+                <li>Tamaño: <?php echo $animal['tamano']; ?></li>
+                <li>Peso: <?php echo $animal['peso']; ?> kg</li>
+                <li>Fecha de nacimiento: <?php echo $animal['fnacimiento']; ?></li>
+                <li>Otra información: <?php echo $animal['informacion']; ?></li>  
             </ul>
             </div>
             <div class="containerButton">
