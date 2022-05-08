@@ -18,7 +18,6 @@ include("./PHP/animales.php");
     <link rel="stylesheet" href="Css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Playfair+Display&display=swap" rel="stylesheet">
-    <script src="JS/script.js"></script>
     <!-- iconify library -->
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 </head>
@@ -129,7 +128,7 @@ include("./PHP/animales.php");
         <h1 class="titulo">Contacto</h1>
         <div id="contenedorContacto">
             <h2>¿En qué podemos ayudarte?</h2>
-            <form id="formu" action="contacto.php" name="formulario" method="POST">
+            <form id="formu" action="modalContacto.php" name="formulario" method="POST">
                 <label class="etiquetaFormu" for="nombre">Nombre</label>
                 <input class="inputFormu" type="text" placeholder="Escribe tu nombre" name="nombre" id="nombre" required>
 
@@ -142,7 +141,7 @@ include("./PHP/animales.php");
                 <label class="etiquetaFormu" for="mensaje">Mensaje</label>
                 <textarea class="inputFormu" placeholder="Escribe lo que quieras comentarnos" name="mensaje" id="mensaje" cols="30" rows="10" required></textarea>
 
-                <button class="btn-primario" type="submit" onclick="modalContacto()">Enviar</button>
+                <button class="btn-primario" type="submit">Enviar</button>
             </form>
         </div>
     </section>
@@ -193,7 +192,7 @@ include("./PHP/animales.php");
             </div>
             <div class="boletin">
                 <h3 class="titulosFooter">Suscríbete a nuestro boletín de noticias</h3>
-                <form action="boletin.php" method="POST" class="boletinForm">
+                <form action="modalBoletin.php" method="POST" class="boletinForm">
                     <div class="inputBoletin">
                         <input type="text" placeholder="Escribe tu correo electrónico" name="emailB" id="email">
                         <button type="submit" class="btnIcon"><span class="iconify" data-icon="icon-park-outline:send" style="color: white;" data-width="24"></span></button>

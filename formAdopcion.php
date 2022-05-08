@@ -3,6 +3,8 @@
 $json = file_get_contents('textos.json');
 $texto = json_decode($json, true);
 
+require './PHP/detalleAnimal.php';
+
 ?>
 
 <!DOCTYPE html>
@@ -20,23 +22,24 @@ $texto = json_decode($json, true);
 
 <body>
     <header id="encabezado">
-        <?php require "navbar.php" ?>
+    <?php require "navbar.php" ?>
     </header>
     <section id="formAdopcion">
         <div id="contenedorForm">
 
             <h3 class="titulosFormAdopcion">Datos personales</h3>
-            <form id="formulario" action="">
+            <form id="formulario" action="modalFormAdopcion.php" method="POST">
+                <input class="inputFormu" type="text" name="nombreAnimal" value="<?php echo $animal['nombre'] ?>" style="display:none">
                 <label class="etiquetaFormu" for="">Nombre</label>
-                <input class="inputFormu" type="text" placeholder="Escribe tu nombre">
+                <input class="inputFormu" type="text" placeholder="Escribe tu nombre" name="nombre">
                 <label class="etiquetaFormu" for="">Apellidos</label>
-                <input class="inputFormu" type="text" placeholder="Escribe tus apellidos">
+                <input class="inputFormu" type="text" placeholder="Escribe tus apellidos" name="apellidos">
                 <label class="etiquetaFormu" for="">DNI</label>
-                <input class="inputFormu" type="text" placeholder="Escribe tu DNI">
+                <input class="inputFormu" type="text" placeholder="Escribe tu DNI" name="dni">
                 <label class="etiquetaFormu" for="">Teléfono</label>
-                <input class="inputFormu" type="tel" placeholder="Escribe tu teléfono">
+                <input class="inputFormu" type="tel" placeholder="Escribe tu teléfono" name="telefono">
                 <label class="etiquetaFormu" for="">Correo electrónico</label>
-                <input class="inputFormu" type="email" placeholder="Escribe tu correo electrónico">
+                <input class="inputFormu" type="email" placeholder="Escribe tu correo electrónico" name="email">
 
                 <h3 class="titulosFormAdopcion">términos de la adopción</h3>
                 <p><?php echo $texto['formularioAdopcion']['parrafo1']; ?></p>
@@ -44,10 +47,10 @@ $texto = json_decode($json, true);
                 <p><?php echo $texto['formularioAdopcion']['parrafo3']; ?></p>
 
                 <label>
-                    <input type="checkbox" id="cbox1" value=""><?php echo $texto['formularioAdopcion']['checkbox']; ?>
+                    <input type="checkbox" id="cbox1" value="sí" name="consentimiento" required><?php echo $texto['formularioAdopcion']['checkbox']; ?>
                 </label>
                 <div class="contenedor-btn">
-                    <button id="btn-confirmar">Confirmar adopción</button>
+                    <button id="btn-confirmar" type="submit">Confirmar adopción</button>
 
                 </div>
             </form>

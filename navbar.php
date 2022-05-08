@@ -11,12 +11,12 @@
 
 <body>
     <nav>
-        <a href="index.html">
+        <a href="index.php">
             <img src="assets/logos/second_chance.png" alt="logo" id="logo" width="66">
         </a>
         <div id="menu">
             <ul id="listaMenu">
-                <li class="elementoMenu"><a href="index.php#encabezado">Inicio</a></li>
+                <li class="elementoMenu"><a href="index.php">Inicio</a></li>
                 <li class="elementoMenu"><a href="index.php#sobreNosotros">Sobre nosotros</a></li>
                 <li class="elementoMenu"><a href="index.php#adoptaUnAnimal">Adopta un animal</a></li>
                 <li class="elementoMenu"><a href="index.php#contacto">Contacto</a></li>
