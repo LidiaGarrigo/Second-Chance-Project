@@ -16,6 +16,7 @@ include("./PHP/animales.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Second chance</title>
     <link rel="stylesheet" href="Css/style.css">
+    <link rel="shortcut icon" href="./assets/favicon/second_chance.png">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Playfair+Display&display=swap" rel="stylesheet">
     <script src="JS/script.js"></script>
