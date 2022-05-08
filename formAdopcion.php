@@ -1,7 +1,7 @@
 <?php
 
-$json = file_get_contents('datos.json');
-$datos = json_decode($json, true);
+$json = file_get_contents('textos.json');
+$texto = json_decode($json, true);
 
 ?>
 
@@ -39,12 +39,12 @@ $datos = json_decode($json, true);
                 <input class="inputFormu" type="email" placeholder="Escribe tu correo electrónico">
 
                 <h3 class="titulosFormAdopcion">términos de la adopción</h3>
-                <p><?php echo $datos['formularioAdopcion']['parrafo1']; ?></p>
-                <p><?php echo $datos['formularioAdopcion']['parrafo2']; ?></p>
-                <p><?php echo $datos['formularioAdopcion']['parrafo3']; ?></p>
+                <p><?php echo $texto['formularioAdopcion']['parrafo1']; ?></p>
+                <p><?php echo $texto['formularioAdopcion']['parrafo2']; ?></p>
+                <p><?php echo $texto['formularioAdopcion']['parrafo3']; ?></p>
 
                 <label>
-                    <input type="checkbox" id="cbox1" value=""><?php echo $datos['formularioAdopcion']['checkbox']; ?>
+                    <input type="checkbox" id="cbox1" value=""><?php echo $texto['formularioAdopcion']['checkbox']; ?>
                 </label>
                 <div class="contenedor-btn">
                     <button id="btn-confirmar">Confirmar adopción</button>

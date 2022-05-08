@@ -1,9 +1,9 @@
 <?php
 
-$json = file_get_contents('datos.json');
-$datos = json_decode($json, true);
+$json = file_get_contents('textos.json');
+$texto = json_decode($json, true);
 
-include("animales.php");
+include("./PHP/animales.php");
 
 ?>
 
@@ -28,15 +28,15 @@ include("animales.php");
         <?php require "navbar.php" ?>
         <img src="assets/dogs.png" alt="Imagen no disponible" id="dogsImage">
         <div class="slogan">
-            <h1><?php echo $datos['inicio']['eslogan']; ?></h1>
+            <h1><?php echo $texto['inicio']['eslogan']; ?></h1>
         </div>
     </header>
     <section id="sobreNosotros">
         <h1 class="titulo">Sobre nosotros</h1>
         <div class="contenido">
-            <p><?php echo $datos['sobreNosotros']['parrafo1']; ?></p>
-            <p><?php echo $datos['sobreNosotros']['parrafo2']['seccion1']; ?><em><b><?php echo $datos['sobreNosotros']['parrafo2']['seccion2']; ?></b></em><?php echo $datos['sobreNosotros']['parrafo2']['seccion3']; ?><b><?php echo $datos['sobreNosotros']['parrafo2']['seccion4']; ?></b><?php echo $datos['sobreNosotros']['parrafo2']['seccion5']; ?></p>
-            <p><?php echo $datos['sobreNosotros']['parrafo3']; ?></p>
+            <p><?php echo $texto['sobreNosotros']['parrafo1']; ?></p>
+            <p><?php echo $texto['sobreNosotros']['parrafo2']['seccion1']; ?><em><b><?php echo $texto['sobreNosotros']['parrafo2']['seccion2']; ?></b></em><?php echo $texto['sobreNosotros']['parrafo2']['seccion3']; ?><b><?php echo $texto['sobreNosotros']['parrafo2']['seccion4']; ?></b><?php echo $texto['sobreNosotros']['parrafo2']['seccion5']; ?></p>
+            <p><?php echo $texto['sobreNosotros']['parrafo3']; ?></p>
         </div>
         <img src="assets/compis.png" alt="Imagen no disponible">
     </section>
@@ -131,16 +131,16 @@ include("animales.php");
             <h2>¿En qué podemos ayudarte?</h2>
             <form id="formu" action="contacto.php" name="formulario" method="POST">
                 <label class="etiquetaFormu" for="nombre">Nombre</label>
-                <input class="inputFormu" type="text" placeholder="Escribe tu nombre" name="nombre" id="nombre">
+                <input class="inputFormu" type="text" placeholder="Escribe tu nombre" name="nombre" id="nombre" required>
 
                 <label class="etiquetaFormu" for="telefono">Teléfono</label>
-                <input class="inputFormu" type="tel" placeholder="Escribe tu teléfono" name="telefono" id="telefono">
+                <input class="inputFormu" type="tel" placeholder="Escribe tu teléfono" name="telefono" id="telefono" required>
 
                 <label class="etiquetaFormu" for="email">Correo electrónico</label>
-                <input class="inputFormu" type="email" placeholder="Escribe tu correo electrónico" name="email" id="email">
+                <input class="inputFormu" type="email" placeholder="Escribe tu correo electrónico" name="email" id="email" required>
 
                 <label class="etiquetaFormu" for="mensaje">Mensaje</label>
-                <textarea class="inputFormu" placeholder="Escribe lo que quieras comentarnos" name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                <textarea class="inputFormu" placeholder="Escribe lo que quieras comentarnos" name="mensaje" id="mensaje" cols="30" rows="10" required></textarea>
 
                 <button class="btn-primario" type="submit" onclick="modalContacto()">Enviar</button>
             </form>

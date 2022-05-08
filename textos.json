@@ -1,0 +1,22 @@
+{
+    "inicio": {
+        "eslogan": "Adoptar un animal no cambiará el mundo, pero <br> cambiará el mundo de ese animal"
+    },
+    "sobreNosotros": {
+        "parrafo1": "Somos dos estudiantes de Desarrollo de Aplicaciones Web, que decidieron unir sus conocimientos adquiridos en tecnología para lograr el importante objetivo de colaborar en la tarea de conseguir un nuevo hogar a las mascotas desfavorecidas, víctimas del abandono animal.",
+        "parrafo2": {
+            "seccion1": "Creemos que “",
+            "seccion2": "Adoptar un animal no cambiará el mundo, pero cambiará el mundo de ese animal",
+            "seccion3": "”, por esa razón, Lidia Garrigó desde Barcelona y Lenon Acacio desde Madrid, hemos unido esfuerzos para crear ",
+            "seccion4": "Second Chance",
+            "seccion5": ", una aplicación que no solo cambiará tu vida, sino también la de un amoroso animal."
+        },
+        "parrafo3": "En las fotos de a continuación, podrás observar a Lidia a punto de alimentar a Gris, su pequeño conejo saltarín y a Lenon posando en una selfie por la tarde junto a su adorada perrita Fiona."
+    },
+    "formularioAdopcion": {
+        "parrafo1": "La llegada al hogar de un animal de compañía supone la asunción de una importante responsabilidad. Antes de tomar la decisión definitiva, reflexiona sobre lo que ello implica. La adopción de animales en este sitio web es gratuita.",
+        "parrafo2": "Al enviar tus datos, se reservará la adopción del animal y no podrá ser escogido por otra persona.",
+        "parrafo3": "Para retirar el animal que ha reservado debe ser mayor de edad y presentar DNI o equivalente. Second Chance considera como objetivo básico garantizar la privacidad y confidencialidad de los datos personales de sus usuarios recabados a través de cualquier sistema que permita la transmisión de los mismos. Second Chance manifiesta su compromiso de cumplimiento con la legislación española que en esta materia se encuentre en cada momento vigente, en la actualidad, la Ley Orgánica 15/1999, de 13 de diciembre, de Protección de Datos de Carácter Personal y el nuevo Reglamento General Europeo de Protección de Datos de Carácter Personal. Los datos recabados serán tratados con la finalidad de poder gestionar adecuadamente todo el proceso relativo a la adopción de un animal en Second Chance. La legitimación se realiza a través de su consentimiento expreso. Los datos no podrán cedidos a terceros salvo en los supuestos previstos en la normativa vigente sobre protección de datos de carácter personal.",
+        "checkbox": " He leído y estoy de acuerdo con los términos y condiciones de la web *"
+    }
+}

@@ -6,6 +6,4 @@ try {
 } catch (Exception $e) {
     echo "Error: " . $e->getMessage();
 }
-
-/* $statement = $conexion_mysql->prepare("INSERT INTO subscripciones VALUES ('$email')");
-$statement->execute(); */
+?>

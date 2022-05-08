@@ -1,4 +1,4 @@
-<?php require 'db.php' ?>
+<?php require './PHP/db.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 

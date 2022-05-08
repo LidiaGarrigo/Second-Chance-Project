@@ -1,9 +1,6 @@
 <?php
 
-$json = file_get_contents('datos.json');
-$datos = json_decode($json, true);
-
-require 'detalleAnimal.php';
+require './PHP/detalleAnimal.php';
 
 ?>
 <!DOCTYPE html>
