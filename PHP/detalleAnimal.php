@@ -1,6 +1,6 @@
 <?php
 
-include("db.php");
+require("db.php");
 
 $id = isset($_GET['id']) ? (int)$_GET['id'] : false;
 

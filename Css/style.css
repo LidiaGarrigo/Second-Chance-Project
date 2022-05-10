@@ -54,6 +54,9 @@ nav {
 .elementoMenu {
     margin-right: 70px;
 }
+.elementoMenu a:hover{
+    color: #D5A370;
+}
 
 .elementoMenu>a {
     text-decoration: none;

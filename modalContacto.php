@@ -1,6 +1,6 @@
 <?php
 
-include("./PHP/db.php");
+require("./PHP/db.php");
 
 $nombre = $_POST["nombre"];
 $telefono = $_POST["telefono"];
@@ -38,7 +38,7 @@ $statement->execute();
                 <span class="iconify" data-icon="akar-icons:circle-check-fill" style="color: #19ab4f;" data-width="100"></span>
             </div>
             <div class="texto">
-                <p>Gracias <strong><?php echo $nombre ?></strong>, en breve nos pondremos en contacto contigo. Primero contactaremos contigo al teléfono facilitado: <strong><?php echo $telefono ?></strong>, en caso de no poder atender a la llamada, te contactaremos vía correo electrónico a <strong><?php echo $email ?></strong>.</p>
+                <p>Gracias <strong><?php echo $nombre ?></strong>, en breve nos pondremos en contacto contigo. Primero contactaremos al teléfono facilitado: <strong><?php echo $telefono ?></strong>, en caso de no poder atender a la llamada, te contactaremos vía correo electrónico a <strong><?php echo $email ?></strong>.</p>
             </div>
             <div class="boton">
                 <button class="btn-primario" onclick="window.location.href='index.php'">Aceptar</button>

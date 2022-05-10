@@ -1,6 +1,6 @@
 <?php
 
-include("./PHP/db.php");
+require("./PHP/db.php");
 
 $email = $_POST["emailB"];
 

@@ -3,7 +3,7 @@
 $json = file_get_contents('textos.json');
 $texto = json_decode($json, true);
 
-include("./PHP/animales.php");
+require("./PHP/animales.php");
 
 ?>
 
@@ -25,7 +25,7 @@ include("./PHP/animales.php");
 
 <body>
     <header id="encabezado">
-        <?php require "navbar.php" ?>
+        <?php include "navbar.php" ?>
         <img src="assets/dogs.png" alt="Imagen no disponible" id="dogsImage">
         <div class="slogan">
             <h1><?php echo $texto['inicio']['eslogan']; ?></h1>

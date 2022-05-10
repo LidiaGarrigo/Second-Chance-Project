@@ -1,6 +1,6 @@
 <?php
 
-include("db.php");
+require("db.php");
 
 
 $statement = $conexion_mysql->prepare('SELECT * FROM animales');
